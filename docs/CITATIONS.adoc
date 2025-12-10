@@ -1,0 +1,36 @@
+= obli-transpiler-framework - Citation Guide
+:toc:
+
+== BibTeX
+
+[source,bibtex]
+----
+@software{obli-transpiler-framework_2025,
+  author = {Polymath, Hyper},
+  title = {obli-transpiler-framework},
+  year = {2025},
+  url = {https://github.com/hyperpolymath/obli-transpiler-framework},
+  license = {AGPL-3.0-or-later}
+}
+----
+
+== Harvard Style
+
+Polymath, H. (2025) _obli-transpiler-framework_ [Computer software]. Available at: https://github.com/hyperpolymath/obli-transpiler-framework
+
+== OSCOLA
+
+Hyper Polymath, 'obli-transpiler-framework' (2025) <https://github.com/hyperpolymath/obli-transpiler-framework>
+
+== MLA
+
+Polymath, Hyper. "obli-transpiler-framework." 2025, github.com/hyperpolymath/obli-transpiler-framework.
+
+== APA 7
+
+Polymath, H. (2025). _obli-transpiler-framework_ [Computer software]. GitHub. https://github.com/hyperpolymath/obli-transpiler-framework
+
+== See Also
+
+* link:../CITATION.cff[CITATION.cff]
+* link:../codemeta.json[codemeta.json]
