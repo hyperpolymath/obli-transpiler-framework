@@ -97,39 +97,26 @@
       Each language is chosen for its strengths in its domain.")))
 
 ;;; End of META.scm
-;; ============================================================================
-;; CROSS-PLATFORM STATUS (Added 2025-12-17)
-;; ============================================================================
-;; ATTENTION: Both GitHub and GitLab were active on the same day.
-;; Manual review required before syncing.
+;;;============================================================================
+;;; CROSS-PLATFORM STATUS (Added 2025-12-17, Resolved 2025-12-17)
+;;;============================================================================
+;;; GitHub is the single source of truth. GitLab mirror is automated.
 
-(cross-platform-status
-  (generated "2025-12-17")
-  (primary-platform "github")
-  (gitlab-mirror
-    (path "hyperpolymath/obli-transpiler-framework")
-    (url "https://gitlab.com/hyperpolymath/obli-transpiler-framework")
-    (last-gitlab-activity "2025-12-17")
-    (sync-status "needs-review")
-    (notes "Both platforms active same day. Compare before sync."))
-  
-  (reconciliation-instructions
-    ";; STEP 1: Add GitLab remote and fetch"
-    ";; git remote add gitlab https://gitlab.com/hyperpolymath/obli-transpiler-framework.git"
-    ";; git fetch gitlab"
-    ";;"
-    ";; STEP 2: Compare the two versions"
-    ";; git log --oneline main          # GitHub history"
-    ";; git log --oneline gitlab/main   # GitLab history"  
-    ";; git diff main gitlab/main       # See differences"
-    ";;"
-    ";; STEP 3: Decide and merge if needed"
-    ";; git merge gitlab/main --allow-unrelated-histories"
-    ";; OR cherry-pick specific: git cherry-pick <sha>"
-    ";;"
-    ";; STEP 4: After reconciliation, update this section:"
-    ";;   (sync-status \"resolved\")"
-    ";;   (resolved-date \"YYYY-MM-DD\")")
-  
-  (action-required "needs-review"))
+(define cross-platform-status
+  '((generated . "2025-12-17")
+    (primary-platform . "github")
+    (gitlab-mirror
+     ((path . "hyperpolymath/obli-transpiler-framework")
+      (url . "https://gitlab.com/hyperpolymath/obli-transpiler-framework")
+      (last-gitlab-activity . "2025-12-17")
+      (sync-status . "resolved")
+      (resolved-date . "2025-12-17")
+      (notes . "GitHub is canonical source; GitLab is automated mirror.")))
+    (reconciliation-instructions
+     (";; If sync issues arise:"
+      ";; git remote add gitlab https://gitlab.com/hyperpolymath/obli-transpiler-framework.git"
+      ";; git fetch gitlab"
+      ";; git diff main gitlab/main"
+      ";; Resolve manually if divergence detected"))
+    (action-required . "none")))
 
